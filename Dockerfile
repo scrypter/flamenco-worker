@@ -13,4 +13,4 @@ RUN \
   && rm -rf /var/lib/apt/lists/*
 
 
-# ENTRYPOINT ["/flamenco/entrypoint.sh"]
+ENTRYPOINT ["/flamenco/entrypoint.sh"]
