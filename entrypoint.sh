@@ -4,8 +4,10 @@ mkdir -p $BLENDER_DIR
 mkdir -p $JOBS_DIR
 mkdir -p $RENDER_DIR
 
+echo "Manager URL is ${MANAGER_URL}"
+
 # Clear /tmp directory
-rm -rf /tmp/*
+# rm -rf /tmp/*
 
 # Download blender to /tmp directory
 cd /tmp

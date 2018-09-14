@@ -7,9 +7,10 @@ WORKDIR /flamenco
 
 RUN \
   yes | apt-get update \
-  && apt-get -y install gettext-base vim curl \
+  && apt-get -y install gettext-base vim curl dos2unix \
+  && dos2unix /flamenco/* \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 
 
-ENTRYPOINT ["/flamenco/entrypoint.sh"]
+# ENTRYPOINT ["/flamenco/entrypoint.sh"]
